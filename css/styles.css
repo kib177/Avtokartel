@@ -530,17 +530,17 @@ footer p {
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
-        gap: 5px;
+        gap: 15px;
     }
     .hero p,
     .hero ul,
     .hero-content {
-        max-width: 100%;
+        max-width: 50%;
     }
     .header-phone {
         margin-left: 0;
         margin-top: 10px;
-        width: 100%;
+        width: 50%;
         text-align: center;
     }
     
@@ -575,7 +575,7 @@ footer p {
     .contact-item i {
         font-size: 2rem;
     }
-  /* Ещё меньше логотип */
+
     .logo-img {
         height: 45px; 
     }
@@ -628,7 +628,7 @@ footer p {
     .hero h1 {
         font-size: 1.8rem;
     }
-.logo-img {
+    .logo-img {
         height: 50px;
     }
 
