@@ -535,12 +535,12 @@ footer p {
     .hero p,
     .hero ul,
     .hero-content {
-        max-width: 50%;
+        max-width: 80%;
     }
     .header-phone {
         margin-left: 0;
         margin-top: 10px;
-        width: 50%;
+        width: 80%;
         text-align: center;
     }
     
