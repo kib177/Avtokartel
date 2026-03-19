@@ -527,13 +527,12 @@ footer p {
     margin: 5px 0;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
-        gap: 15px;
+        gap: 5px;
     }
- .hero p,
+    .hero p,
     .hero ul,
     .hero-content {
         max-width: 100%;
@@ -578,11 +577,10 @@ footer p {
     }
   /* Ещё меньше логотип */
     .logo-img {
-        height: 45px; /* было 60, теперь 45 */
+        height: 45px; 
     }
 
-    /* Основной текст логотипа уменьшаем */
-    .logo-main {
+        .logo-main {
         font-size: 0.95rem;
     }
 
@@ -591,22 +589,19 @@ footer p {
         letter-spacing: 0.5px;
     }
 
-    /* Убираем лишние отступы в шапке */
-    header {
+        header {
         padding: 5px 0;
     }
 
-    /* Меню: делаем шрифт мельче и уменьшаем gap */
-    nav ul {
+       nav ul {
         gap: 8px;
     }
 
     nav a {
         font-size: 0.8rem;
-        padding-bottom: 2px; /* уменьшаем нижний отступ */
+        padding-bottom: 2px; 
     }
 
-    /* Телефон: делаем меньше */
     .header-phone a {
         font-size: 0.8rem;
     }
@@ -615,7 +610,6 @@ footer p {
         font-size: 0.9rem;
     }
 
-    /* Телефон: делаем компактнее */
     .header-phone a {
         font-size: 0.9rem;
     }
