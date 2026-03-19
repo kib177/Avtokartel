@@ -13,9 +13,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 /* Разделители секций */
@@ -38,7 +38,7 @@ body {
 }
 
 .logo-img {
-    height: 85px;
+    height: 90px;
     width: auto;
     display: block;
 }
@@ -92,10 +92,12 @@ header .container {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 24px;
 }
@@ -104,7 +106,7 @@ nav a {
     text-decoration: none;
     color: #34495e;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: color 0.2s;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
@@ -113,6 +115,31 @@ nav a {
 nav a:hover {
     color: #2980b9;
     border-bottom-color: #2980b9;
+}
+
+.header-phone {
+    margin-left: 10px;          
+    white-space: nowrap;        
+}
+
+.header-phone a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;                  
+    transition: color 0.2s;
+}
+
+.header-phone a:hover {
+    color: #2980b9;            
+}
+
+.header-phone i {
+    color: #2980b9;             
+    font-size: 1.1rem;
 }
 
 /* Главный баннер */
@@ -125,15 +152,19 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
     font-weight: 500;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
     opacity: 0.9;
+    max-width: 1100px;      
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;  
 }
 
 .btn {
@@ -179,7 +210,7 @@ nav a:hover {
 /* Сетка услуг и преимуществ */
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     margin: 50px 0;
 }
@@ -191,6 +222,9 @@ nav a:hover {
     border-radius: 6px;
     text-align: center;
     transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .service-item:hover {
@@ -200,26 +234,30 @@ nav a:hover {
 .service-item i {
     font-size: 3.0rem;
     color: #2980b9;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .service-item h3 {
     margin-bottom: 0px;
     color: #2c3e50;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     font-weight: 600;
 }
 
 .service-item p {
     color: #7f8c8d;
     font-size: 0.95rem;
+    margin-top: auto;
+    text-align: center;
+    margin: 0;
 }
 
 .price {
     font-size: 1.8rem;
     font-weight: 700;
     color: #2980b9;
-    margin-top: 10px;
+    margin-top: auto;
+    text-align: center;
 }
 
 .service-img {
@@ -293,7 +331,52 @@ nav a:hover {
     color: #2980b9;
     width: 24px;
 }
+/* Стили для страницы "Юридическим лицам" */
+.legal-section {
+    background: white;
+    border: 1px solid #ecf0f1;
+    padding: 40px;
+    border-radius: 6px;
+    margin: 40px 0;
+    line-height: 1.7;
+    color: #34495e;
+}
 
+.legal-section p,
+.legal-section ul {
+    margin-bottom: 1.2em;
+}
+
+.legal-section ul {
+    padding-left: 25px;  
+    margin-top: 0.3em;
+}
+
+.legal-section li {
+    margin-bottom: 0.4em;
+}
+
+.legal-section p:last-child,
+.legal-section ul:last-child {
+    margin-bottom: 0;
+}
+
+.legal-section ul {
+    list-style-type: none; 
+}
+
+.legal-section li {
+    position: relative;
+    padding-left: 25px; 
+}
+
+.legal-section li::before {
+    content: "✔"; 
+    color: #2980b9;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
 /* Карта */
 #map {
     width: 100%;
@@ -331,6 +414,60 @@ nav a:hover {
 
 .contact-info a:hover {
     color: #3498db;
+}
+/* Сетка контактов */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+/* Карточка контакта */
+.contact-item {
+    background: white;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Иконка */
+.contact-item i {
+    font-size: 2.5rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+/* Заголовок */
+.contact-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Текст и ссылки */
+.contact-item p {
+    color: #34495e;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.contact-item a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
 }
 
 /* Форма записи */
@@ -396,6 +533,21 @@ footer p {
         flex-direction: column;
         gap: 15px;
     }
+ .hero p,
+    .hero ul,
+    .hero-content {
+        max-width: 100%;
+    }
+    .header-phone {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header-phone a {
+        justify-content: center;
+    }
     
     nav ul {
         flex-wrap: wrap;
@@ -417,5 +569,36 @@ footer p {
     
     .appointment-form {
         padding: 25px;
+    }
+.contact-item {
+        padding: 20px 15px;
+    }
+    .contact-item i {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .header-phone a {
+        font-size: 0.9rem;
+    }
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 600px) {
+    .services, .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    .services {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+.contact-item {
+        padding: 20px 15px;
+    }
+    .contact-item i {
+        font-size: 2rem;
     }
 }
