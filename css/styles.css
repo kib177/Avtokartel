@@ -569,53 +569,11 @@ footer p {
     .appointment-form {
         padding: 25px;
     }
-.contact-item {
+    .contact-item {
         padding: 20px 15px;
     }
     .contact-item i {
         font-size: 2rem;
-    }
-
-    .logo-img {
-        height: 45px; 
-    }
-
-        .logo-main {
-        font-size: 0.95rem;
-    }
-
-    .logo-sub {
-        font-size: 0.55rem;
-        letter-spacing: 0.5px;
-    }
-
-        header {
-        padding: 5px 0;
-    }
-
-       nav ul {
-        gap: 8px;
-    }
-
-    nav a {
-        font-size: 0.8rem;
-        padding-bottom: 2px; 
-    }
-
-    .header-phone a {
-        font-size: 0.8rem;
-    }
-
-    .header-phone i {
-        font-size: 0.9rem;
-    }
-
-    .header-phone a {
-        font-size: 0.9rem;
-    }
-
-    .header-phone i {
-        font-size: 1rem;
     }
 }
 @media (max-width: 480px) {
