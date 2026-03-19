@@ -576,32 +576,42 @@ footer p {
     .contact-item i {
         font-size: 2rem;
     }
- /* Уменьшаем высоту логотипа */
+  /* Ещё меньше логотип */
     .logo-img {
-        height: 60px; /* вместо 85px */
+        height: 45px; /* было 60, теперь 45 */
     }
 
-    /* Уменьшаем размер основного текста логотипа */
+    /* Основной текст логотипа уменьшаем */
     .logo-main {
-        font-size: 1.2rem;
+        font-size: 0.95rem;
     }
 
     .logo-sub {
-        font-size: 0.7rem;
-        letter-spacing: 1px;
+        font-size: 0.55rem;
+        letter-spacing: 0.5px;
     }
 
-    /* Уменьшаем отступы в шапке */
+    /* Убираем лишние отступы в шапке */
     header {
-        padding: 8px 0;
+        padding: 5px 0;
     }
 
-    /* Меню: уменьшаем шрифт и отступы между пунктами */
+    /* Меню: делаем шрифт мельче и уменьшаем gap */
     nav ul {
-        gap: 12px;
+        gap: 8px;
     }
 
     nav a {
+        font-size: 0.8rem;
+        padding-bottom: 2px; /* уменьшаем нижний отступ */
+    }
+
+    /* Телефон: делаем меньше */
+    .header-phone a {
+        font-size: 0.8rem;
+    }
+
+    .header-phone i {
         font-size: 0.9rem;
     }
 
